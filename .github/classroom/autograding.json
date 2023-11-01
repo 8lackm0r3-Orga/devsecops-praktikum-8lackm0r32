@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test Docker-compose",
+      "setup": "test/validateDockerComposeSetUp.sh",
+      "run": "curl --no-progress-meter localhost:8080 -I",
+      "input": "",
+      "output": "HTTP/1.1 200 OK",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
