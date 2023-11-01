@@ -16,6 +16,7 @@ jobs:
     if: github.actor != 'github-classroom[bot]'
     steps:
       - uses: actions/checkout@v4
-      - uses: education/autograding@v1
 
       - run: chmod +x validateDockerComposeSetUp.sh
+
+      - uses: education/autograding@v1
